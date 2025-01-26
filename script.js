@@ -28,14 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     taskInput.value = ''; 
   }
 
-  addTaskBtn.addEventListener('click', addTask);
+  addTaskBtn.addEventListener('click', addTask); // Add event listener for button click
 
   taskInput.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
-      addTask();
+      addTask(); 
     }
   });
 
-  // Initial task (optional) - uncomment to add a task on page load
+  // Invoke addTask on DOMContentLoaded (optional)
   // addTask(); 
 });
